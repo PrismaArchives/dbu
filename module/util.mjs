@@ -4,7 +4,8 @@ export async function preloadHandlebarsTemplates() {
     const templatePaths = [
         "systems/DBU/templates/actors/partials/character-header-partial.hbs",
         "systems/DBU/templates/actors/partials/attribute-partial.hbs",
-        "systems/DBU/templates/actors/partials/skills-partial.hbs"
+        "systems/DBU/templates/actors/partials/skills-partial.hbs",
+        "systems/DBU/templates/actors/partials/item-partial.hbs"
     ];
 
     return loadTemplates(templatePaths);

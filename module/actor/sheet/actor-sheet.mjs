@@ -47,13 +47,16 @@ export class DBUActorSheet extends ActorSheet {
             console.log(actor.items);
         })
         
+        
     }
 
     //when and Item is placed on the sheet
     //create logic to ensure certain things can't be duplicates eq transformations and techniques
+    /*
+    super not working rn but leave commented out until fixed wont add items to sheet otherwise
     _onDropItem() {
-        
+        super._onDropItem();
     }
-
+    */ 
 
 } 

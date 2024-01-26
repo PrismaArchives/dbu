@@ -26,23 +26,29 @@
     <div class="tab flexcol" id ="device-tab" data-tab="tab2" data-group="primary-tabs">
         <p>Items</p>
         <div class="flexrow">
-            {{#each actor.items}}
-            <div class="{{this._id}}">
-                <input type="checkbox" id="{{concat this._id "_checkbox"}}">
-                <p>{{this.name}}</p>
-                <input type="image" src="systems/dbu/png/star-ball-5.png" class = "delete img" id="{{this._id}}" width="20" height="20">
-            </div>
+            {{#each gear as |gear|}}
+                {{>"systems/DBU/templates/actors/partials/item-partial.hbs" gear}}
             {{/each}}
         </div>
         
     </div>
 
-    <div class="tab flexrow" id ="device-tab" data-tab="tab3" data-group="primary-tabs">
+    <div class="tab flexcol" id ="device-tab" data-tab="tab3" data-group="primary-tabs">
         <p>Techniques</p>
+        <div class="flexrow">
+            {{#each techniques as |technique|}}
+                {{>"systems/DBU/templates/actors/partials/item-partial.hbs" technique}}
+            {{/each}}
+        </div>
     </div>
 
-    <div class="tab flexrow" id ="device-tab" data-tab="tab4" data-group="primary-tabs">
+    <div class="tab flexcol" id ="device-tab" data-tab="tab4" data-group="primary-tabs">
         <p>Transformations</p>
+        <div class="flexrow">
+            {{#each transformations as |transformation|}}
+                {{>"systems/DBU/templates/actors/partials/item-partial.hbs" transformation}}
+            {{/each}}
+        </div>
     </div>
 
     <div class="tab flexcol" id ="device-tab" data-tab="tab5" data-group="primary-tabs">

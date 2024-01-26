@@ -21,7 +21,7 @@
     flex-grow: 0;
 }
 
-.img {
+.no-grow {
     flex-grow: 0;
 }
 
@@ -111,6 +111,13 @@ h4 {
 }
 
 
+.no_grow {
+    flex-grow: 0;
+}
 
-
-
+.item-class{
+    flex-grow: 0.1;
+    flex-shrink: 0.31;
+    flex-basis: 430px;
+    flex-wrap: warp;
+}
